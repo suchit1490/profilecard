@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS only -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    /> -->
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Kumbh Sans";
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        padding: 10px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .bg-image {
+        height: 100vh;
+        background-color: hsl(185, 75%, 39%);
+        background-image: url("/bg-pattern-top.svg"),
+          url("/bg-pattern-bottom.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-position: top -500px left -40%, bottom -600px right -40%;
+        background-size: 60%, 65%;
+        /* Watched background postion video from youtube: https://www.youtube.com/watch?v=3T_Jy1CqH9k */
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+      }
+      .card {
+        height: auto;
+        width: 350px;
+        /* border: 2px solid black; */
+        overflow: hidden;
+        border-radius: 20px;
+        background-color: white;
+      }
+      .student-img {
+        border: 3px solid white;
+        border-radius: 50px;
+        position: relative;
+        top: -50px;
+      }
+      .name_age {
+        margin-top: 10px;
+        position: relative;
+        top: -50px;
+      }
+      .city {
+        padding: 10px;
+        font-weight: 400;
+      }
+      .age,
+      .city,
+      .count_info {
+        color: hsl(0, 0%, 59%);
+        font-weight: 400;
+      }
+      .footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px;
+      }
+      .count_info {
+        font-size: x-small;
+      }
+      .horizontal-line {
+        color: lightgray;
+      }
+      .total_count {
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-image">
+      <div class="container">
+        <div class="card">
+          <div class="header">
+            <div class="header-img">
+              <img src="/bg-pattern-card.svg" />
+            </div>
+          </div>
+          <div class="body">
+            <div class="student-info">
+              <img src="/image-victor.jpg" class="student-img" />
+              <div class="name_age">
+                <h2 class="name">Victor Crest <span class="age">26</span></h2>
+                <p class="city">London</p>
+              </div>
+            </div>
+          </div>
+          <hr class="horizontal-line" />
+          <div class="footer">
+            <div class="followers_info">
+              <h3 class="total_count">80K</h3>
+              <span class="count_info">Followers</span>
+            </div>
+            <div class="followers_info">
+              <h3 class="total_count">803K</h3>
+              <span class="count_info">Likes</span>
+            </div>
+            <div class="followers_info">
+              <h3 class="total_count">1.4K</h3>
+              <span class="count_info">Photos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Suchit Dubey</a>.
+    </div>
+  </body>
+</html>
